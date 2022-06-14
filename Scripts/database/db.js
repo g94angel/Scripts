@@ -3,9 +3,6 @@ const mongoose = require('mongoose');
 
 
 
-// need to paste the following into the terminal to connect to DB
-// mongosh "mongodb+srv://cluster0.jmmay.mongodb.net/myFirstDatabase" --apiVersion 1 --username g94angel
-
 const options = {
   useNewUrlParser: true,
   useUnifiedTopology: true,
