@@ -1,0 +1,111 @@
+/* CSS document */
+body,
+button,
+input {
+  font-family: Geneva;
+  background: azure;
+  color: rgba(41, 41, 41, 0.49);
+  font-size: 14pt;
+}
+body {
+  margin: 100px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: flex-end;
+  /* margin-top: 10%; */
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+input {
+  border-radius: .3em;
+    padding: .5rem;
+  width: 400px;
+  line-height: 40px;
+  margin: 15px 7px;
+    background-color: azure;
+    color: rgba(0, 0, 0, 0.436);
+    outline: none;
+    border: solid 1px rgba(113, 113, 113, 0.438);
+    text-align: center;
+  }
+  
+  input:hover,
+  input:focus {
+    color: azure;
+    background-color: rgba(113, 113, 113, 0.436);
+    border: solid 1px rgba(199, 199, 199, 0.208);
+  }
+  
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(0, 0, 0, 0.436);
+    opacity: 1;
+    text-align: center;
+    /* Firefox */
+  }
+  
+  input:hover::placeholder {
+    color: azure;
+    border: none;
+  }
+  
+  input:focus::placeholder {
+    color: azure;
+    border: none;
+}
+
+.buttons {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+button {
+  margin: 20px 10px 27px 10px;
+  text-align: center;
+  border-radius: .3em;
+    padding: .65rem;
+    border: solid 1px rgba(113, 113, 113, 0.438);
+    background-color: azure;
+    color: rgba(0, 0, 0, 0.436);
+}
+
+button:hover {
+  color: azure;
+  background-color: rgba(113, 113, 113, 0.436);
+  border: solid 1px rgba(199, 199, 199, 0.208);
+}
+
+#entries {
+  /* width: 500px; */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  margin: 0 auto;
+  height: .5px;
+  border-width: 0;
+  border-top: dotted 1px;
+}
