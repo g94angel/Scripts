@@ -27,7 +27,7 @@ entriesController.createEntry = (req, res, next) => {
 }
 
 entriesController.getEntries = (req, res, next) => {
-  Reader.find({}).exec()
+  Reader.find({})
     .then(entryData => {
       res.locals.entries = entryData;
       return next();

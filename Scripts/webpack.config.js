@@ -24,6 +24,17 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
-  plugins: [new HtmlWebpackPlugin()]
+  plugins: [
+    new HtmlWebpackPlugin()
+  ],
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'build'),
+      publicPath: 'build/bundle.js'
+    },
+    proxy: {
+      '/api': 'http://localhost:3000'
+    }
+  },
 }
 

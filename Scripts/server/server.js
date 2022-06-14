@@ -18,6 +18,10 @@ app.get('/', (req, res) => {
   return res.status(200).sendFile(path.join(__dirname, '../client/index.html'));
 });
 
+app.use(express.static('./client'))
+
+// express.static() for style.css and main.js
+
 // get an entry from the db
 // http://localhost:3000
 app.post('/', entriesController.getEntry, (req, res) => {
