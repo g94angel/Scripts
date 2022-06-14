@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 // mongoose.set('useFindAndModify', false);
 
-const MONGO_URI = 'mongodb+srv://g94angel:soloproj1@cluster0.jmmay.mongodb.net/readers?retryWrites=true&w=majority';
+
 
 // need to paste the following into the terminal to connect to DB
 // mongosh "mongodb+srv://cluster0.jmmay.mongodb.net/myFirstDatabase" --apiVersion 1 --username g94angel
