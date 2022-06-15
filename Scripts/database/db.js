@@ -1,10 +1,8 @@
 const mongoose = require('mongoose');
 // mongoose.set('useFindAndModify', false);
+const dotenv = require('dotenv');
 
-const MONGO_URI = 'mongodb+srv://g94angel:soloproj1@cluster0.jmmay.mongodb.net/readers?retryWrites=true&w=majority';
-
-// need to paste the following into the terminal to connect to DB
-// mongosh "mongodb+srv://cluster0.jmmay.mongodb.net/myFirstDatabase" --apiVersion 1 --username g94angel
+dotenv.config();
 
 const options = {
   useNewUrlParser: true,
@@ -13,7 +11,7 @@ const options = {
   dbName: 'readers'
 }
 
-mongoose.connect(MONGO_URI, options)
+mongoose.connect(process.env.MONGO_URI, options)
 // .then(() => console.log('Connected to MongoDB.'))
 // .catch(err => console.log(err));
 
